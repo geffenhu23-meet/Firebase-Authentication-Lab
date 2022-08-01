@@ -85,7 +85,7 @@ def signout():
 def all_tweets():
     # tweets={"title" : request.form['title'],"text" : request.form['text']}
     tweet = db.child("Tweet").get().val()
-    x = tweet.keys()
+    # x = tweet.keys()
     return render_template("all_tweets.html", tweets =tweet)
 
 
