@@ -33,8 +33,11 @@
         </div>
                 <div>
             <div class="input-group">
+                <label>full_name</label>
                 <input type="text"  name="full_name" minlength="6">
+                <label>username</label>
                 <input type="text"  name="username" minlength="6">
+                <label>bio</label>
                 <input type="text"  name="bio" maxlength="280">
 
             </div>
@@ -46,7 +49,8 @@
             <input type="submit"/>
         </div>
     </form>
+    {{ error }}
     <br>
-    <a href="/"><button>signin</button></a>
+   <!--  <a href="/"><button>signin</button></a> -->
 </body>
 </html>
