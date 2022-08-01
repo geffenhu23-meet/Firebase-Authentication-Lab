@@ -6,9 +6,12 @@
 </head>
 <body>
  <ul id="myUL">
-                <li>{{tweets.values()}}</li>
                 
-                
+                {%for i in tweets%}
+                <li>{{tweets[i]["title"]}}
+                {{tweets[i]["text"]}}</li>
+
+                {%endfor%}
 
             </ul>
 <a href="/signout"><button>signout</button></a>
