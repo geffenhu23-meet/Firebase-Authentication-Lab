@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 from flask import session as login_session
 import pyrebase
 
-config = {
+Config = {
   "apiKey": "AIzaSyBvbSSb3MPMb6DV3a-8o1jFNeUx2EE6pD4",
   "authDomain": "csuh-5499b.firebaseapp.com",
   "projectId": "csuh-5499b",
@@ -10,8 +10,7 @@ config = {
   "messagingSenderId": "718596833427",
   "appId": "1:718596833427:web:edd0cd1c46e9f448fbcd66",
   "measurementId": "G-NQ393EQYQD",
-  "databaseURL": "https://csuh-5499b-default-rtdb.europe-west1.firebasedatabase.app"
-}
+  "databaseURL": "https://csuh-5499b-default-rtdb.europe-west1.firebasedatabase.app"}
 
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
